@@ -62,7 +62,6 @@ async def smb_registry(machine, outfolder = None, show_pbar = False, use_share =
 		logger.info('[+] REGDUMP Dumping part complete, now parsing the files!')
 		
 		po, err = await parse_regfiles(machine, reshname['SAM_unc'], reshname['SYSTEM_unc'], reshname['SECURITY_unc'])
-		err = True
 		if err is not None:
 			logger.error('[-] REGDUMP Failed to parse the registry hive files remotely!')
 			if outfolder is None:

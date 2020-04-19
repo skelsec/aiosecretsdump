@@ -6,9 +6,9 @@ verstrline = open(VERSIONFILE, "rt").read()
 VSRE = r"^__version__ = ['\"]([^'\"]*)['\"]"
 mo = re.search(VSRE, verstrline, re.M)
 if mo:
-    verstr = mo.group(1)
+	verstr = mo.group(1)
 else:
-    raise RuntimeError("Unable to find version string in %s." % (VERSIONFILE,))
+	raise RuntimeError("Unable to find version string in %s." % (VERSIONFILE,))
 
 
 setup(
@@ -46,9 +46,7 @@ setup(
 		"Operating System :: OS Independent",
 	),
 	install_requires=[
-		'jackdaw>=0.2.6',
-        'aiosmb>=0.2.10',
-        'msldap',
+		'aiosmb>=0.2.10',
 		'pypykatz>=0.3.9',
 		'tqdm',
 	],
