@@ -46,8 +46,8 @@ setup(
 		"Operating System :: OS Independent",
 	),
 	install_requires=[
-		'aiosmb>=0.2.10',
-		'pypykatz>=0.3.9',
+		'aiosmb>=0.2.22',
+		'pypykatz>=0.3.11',
 		'tqdm',
 	],
 	entry_points={
